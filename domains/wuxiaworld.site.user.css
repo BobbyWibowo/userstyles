@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-wuxiaworld.site
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.0
+@version      1.0.1
 @license      MIT
 ==/UserStyle== */
 
@@ -11,6 +11,10 @@
 
 .c-blog-post .entry-content {
   font-family: Merriweather, serif
+}
+
+.main-col {
+  padding: 0 20px
 }
 
 /** HEADER **/
