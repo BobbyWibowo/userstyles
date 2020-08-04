@@ -1,0 +1,63 @@
+/* ==UserStyle==
+@name         BobbyWibowo-www.centinni.com
+@namespace    https://github.com/BobbyWibowo/userstyles
+@version      1.0.0
+@license      MIT
+==/UserStyle== */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/** GENERAL **/
+
+.c-blog-post .entry-content {
+  font-family: Merriweather, serif
+}
+
+.main-col {
+  padding: 0 25px
+}
+
+.reading-manga .reading-content {
+  padding: 0
+}
+
+.reading-content .text-left {
+  font-size: 19px !important
+}
+
+.action_list_icon li:nth-child(1),
+.action_list_icon li:nth-child(2) {
+  display: none
+}
+
+/** HEADER **/
+
+.site-header .main-navigation.style-1,
+.site-header .c-sub-header-nav {
+  background: #000
+}
+
+.site-header .c-sub-header-nav .c-sub-nav_wrap .sub-nav_content .sub-nav_list li a {
+  color: #fff
+}
+
+.site-header .c-sub-header-nav.with-border {
+  border-bottom-color: #000
+}
+
+/** DARK MODE **/
+
+body.text-ui-light {
+  background: #000;
+  color: #fff
+}
+
+body.text-ui-light .body-wrap,
+body.text-ui-light .site-footer {
+  background: #000
+}
+
+body.text-ui-light .c-breadcrumb .breadcrumb li a,
+body.text-ui-light .c-blog-post .entry-content {
+  color: #fff
+}
