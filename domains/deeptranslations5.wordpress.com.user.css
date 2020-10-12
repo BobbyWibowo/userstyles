@@ -7,75 +7,77 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/** GENERAL **/
+@-moz-document domain("deeptranslations5.wordpress.com") {
+  /** GENERAL **/
 
-body,
-body.custom-background {
-  background-color: #000;
-  color: #fff
-}
+  body,
+  body.custom-background {
+    background-color: #000;
+    color: #fff
+  }
 
-.entry-content {
-  font-family: Merriweather, serif;
-  font-size: 19px;
-  padding: 0 25px
-}
+  .entry-content {
+    font-family: Merriweather, serif;
+    font-size: 19px;
+    padding: 0 25px
+  }
 
-.wf-active .entry-content p,
-.wf-active .entry-content ol,
-.wf-active .entry-content ul,
-.wf-active .entry-content dl,
-.wf-active .entry-content dt {
-  font-family: Merriweather, serif
-}
+  .wf-active .entry-content p,
+  .wf-active .entry-content ol,
+  .wf-active .entry-content ul,
+  .wf-active .entry-content dl,
+  .wf-active .entry-content dt {
+    font-family: Merriweather, serif
+  }
 
-.entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-  max-width: 100%;
-  width: 100%
-}
+  .entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+    max-width: 100%;
+    width: 100%
+  }
 
-.site-description,
-body:not(.overlay-header) .toggle-inner .toggle-text,
-.widget .post-date,
-.widget .rss-date,
-.widget_archive li,
-.widget_categories li,
-.widget cite,
-.widget_pages li,
-.widget_meta li,
-.widget_nav_menu li,
-.powered-by-wordpress,
-.to-the-top,
-.singular .entry-header .post-meta,
-.singular:not(.overlay-header) .entry-header .post-meta a,
-.color-accent,
-.color-accent-hover:hover,
-.color-accent-hover:focus,
-:root .has-accent-color,
-.has-drop-cap:not(:focus)::first-letter,
-.wp-block-button.is-style-outline,
-a {
-  color: #1670bf
-}
+  .site-description,
+  body:not(.overlay-header) .toggle-inner .toggle-text,
+  .widget .post-date,
+  .widget .rss-date,
+  .widget_archive li,
+  .widget_categories li,
+  .widget cite,
+  .widget_pages li,
+  .widget_meta li,
+  .widget_nav_menu li,
+  .powered-by-wordpress,
+  .to-the-top,
+  .singular .entry-header .post-meta,
+  .singular:not(.overlay-header) .entry-header .post-meta a,
+  .color-accent,
+  .color-accent-hover:hover,
+  .color-accent-hover:focus,
+  :root .has-accent-color,
+  .has-drop-cap:not(:focus)::first-letter,
+  .wp-block-button.is-style-outline,
+  a {
+    color: #1670bf
+  }
 
-cite,
-figcaption,
-.wp-caption-text,
-.post-meta,
-.entry-content .wp-block-archives li,
-.entry-content .wp-block-categories li,
-.entry-content .wp-block-latest-posts li,
-.wp-block-latest-comments__comment-date,
-.wp-block-latest-posts__post-date,
-.wp-block-embed figcaption,
-.wp-block-image figcaption,
-.wp-block-pullquote cite,
-.comment-metadata,
-.comment-respond .comment-notes,
-.comment-respond .logged-in-as,
-.pagination .dots,
-.entry-content hr:not(.has-background),
-hr.styled-separator,
-:root .has-secondary-color {
-  color: #fff
+  cite,
+  figcaption,
+  .wp-caption-text,
+  .post-meta,
+  .entry-content .wp-block-archives li,
+  .entry-content .wp-block-categories li,
+  .entry-content .wp-block-latest-posts li,
+  .wp-block-latest-comments__comment-date,
+  .wp-block-latest-posts__post-date,
+  .wp-block-embed figcaption,
+  .wp-block-image figcaption,
+  .wp-block-pullquote cite,
+  .comment-metadata,
+  .comment-respond .comment-notes,
+  .comment-respond .logged-in-as,
+  .pagination .dots,
+  .entry-content hr:not(.has-background),
+  hr.styled-separator,
+  :root .has-secondary-color {
+    color: #fff
+  }
 }
