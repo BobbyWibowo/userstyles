@@ -4,7 +4,7 @@
   "author": "Bobby Wibowo",
   "license": "MIT",
   "devDependencies": {
-    "stylelint": "^13.6.1",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint": "16",
+    "stylelint-config-standard": "36"
   }
 }
