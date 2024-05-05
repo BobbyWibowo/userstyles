@@ -1,0 +1,23 @@
+/* ==UserStyle==
+@name         BobbyWibowo-freewebnovel.noveleast.com
+@namespace    https://github.com/BobbyWibowo/userstyles
+@version      1.0.0
+@license      MIT
+==/UserStyle== */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@-moz-document domain("freewebnovel.noveleast.com") {
+  /** GENERAL **/
+  body.night .m-read {
+    background: #000 !important;
+  }
+
+  body.night .m-read .txt {
+    color: #fff !important;
+  }
+
+  .txt {
+    font-family: Merriweather, serif !important
+  }
+}
