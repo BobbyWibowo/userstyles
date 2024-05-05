@@ -1,0 +1,45 @@
+/* ==UserStyle==
+@name         BobbyWibowo-novelbuddy.com
+@namespace    https://github.com/BobbyWibowo/userstyles
+@version      1.0.0
+@license      MIT
+==/UserStyle== */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@-moz-document domain("novelbuddy.com") {
+  /** GENERAL **/
+  body.dark-mode {
+    background: #000 !important;
+    color: #fff !important
+  }
+
+  body.dark-mode .main-container.viewer,
+  body.dark-mode .breadcrumbs-wrapper,
+  body.dark-mode .box {
+    background: #000 !important;
+  }
+
+  body.dark-mode #chapter__content {
+    background: #000 !important;
+    color: #fff !important
+  }
+
+  #chapter__content {
+    font-family: Merriweather, serif !important
+  }
+
+  #listen-chapter {
+    display: none !important;
+  }
+
+  #comment-form .tox-tinymce,
+  #comment-list {
+    filter: invert(1)
+  }
+
+  #comment-form img,
+  #comment-list img {
+    filter: invert(1)
+  }
+}
