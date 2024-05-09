@@ -34,7 +34,7 @@
 		color: orange;
 	}
 
-	.m-read .txt[style*="font-family: Times New Roman"] {
+	.m-read .txt[style*="Times New Roman"] {
     font-family: Merriweather, serif !important
   }
 
@@ -47,7 +47,7 @@
 		color: orange;
 	}
 
-	.m-read .txt[style*="font-size: 18px"] {
+	.m-read .txt[style*="18px"] {
 		font-size: 19px !important;
 	}
 }
