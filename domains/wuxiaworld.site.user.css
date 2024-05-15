@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-wuxiaworld.site
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.1
+@version      1.0.2
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/wuxiaworld.site.user.css
 @license      MIT
 ==/UserStyle== */
@@ -16,7 +16,7 @@
   }
 
   .main-col {
-    padding: 0 25px
+    padding: 0 16px
   }
 
   /** HEADER **/

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-deeptranslations5.wordpress.com
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.1
+@version      1.0.2
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/deeptranslations5.wordpress.com.user.css
 @license      MIT
 ==/UserStyle== */
@@ -20,7 +20,7 @@
   .entry-content {
     font-family: Merriweather, serif;
     font-size: 19px;
-    padding: 0 25px
+    padding: 0 16px
   }
 
   .wf-active .entry-content p,

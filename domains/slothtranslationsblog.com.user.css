@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-slothtranslationsblog.com
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.0
+@version      1.0.1
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/slothtranslationsblog.com.user.css
 @license      MIT
 ==/UserStyle== */
@@ -19,7 +19,7 @@
 
   .site {
     margin: 0;
-    padding: 27px 25px;
+    padding: 24px 16px;
     background: none
   }
 

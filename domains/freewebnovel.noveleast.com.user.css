@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-freewebnovel.noveleast.com
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.2
+@version      1.0.3
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/freewebnovel.noveleast.com.user.css
 @license      MIT
 ==/UserStyle== */
@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @-moz-document domain("freewebnovel.noveleast.com"), domain("freewebnovel.comenovel.com") {
-	/** GENERAL **/
+  /** GENERAL **/
 
   body.night .m-read {
     background: #000 !important;
@@ -19,35 +19,39 @@
     color: #fff !important;
   }
 
-	@media only screen and (width <= 767px) {
-		.wp {
-			padding: 0 16px !important;
-		}
-	}
+  .m-read .wp {
+    max-width: 900px !important;
+  }
 
-	/** Times New Roman -> Merriweather **/
+  @media only screen and (width <= 767px) {
+    .m-read .wp {
+      padding: 0 16px !important;
+    }
+  }
 
-	.font-box .item:nth-child(2) .right::after {
-		display: block;
-		content: "Times New Roman = Merriweather";
-		font-size: 0.75rem;
-		color: orange;
-	}
+  /** Times New Roman -> Merriweather **/
 
-	.m-read .txt[style*="Times New Roman"] {
+  .font-box .item:nth-child(2) .right::after {
+    display: block;
+    content: "Times New Roman = Merriweather";
+    font-size: 0.75rem;
+    color: orange;
+  }
+
+  .m-read .txt[style*="Times New Roman"] {
     font-family: Merriweather, serif !important
   }
 
-	/** Font size: 18px -> 19px **/
+  /** Font size: 18px -> 19px **/
 
-	.font-box .item:nth-child(3) .right::after {
-		display: block;
-		content: "18px = 19px";
-		font-size: 0.75rem;
-		color: orange;
-	}
+  .font-box .item:nth-child(3) .right::after {
+    display: block;
+    content: "18px = 19px";
+    font-size: 0.75rem;
+    color: orange;
+  }
 
-	.m-read .txt[style*="18px"] {
-		font-size: 19px !important;
-	}
+  .m-read .txt[style*="18px"] {
+    font-size: 19px !important;
+  }
 }
