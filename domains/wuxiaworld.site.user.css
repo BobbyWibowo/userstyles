@@ -1,14 +1,16 @@
 /* ==UserStyle==
 @name         BobbyWibowo-wuxiaworld.site
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.2
+@version      1.0.3
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/wuxiaworld.site.user.css
 @license      MIT
 ==/UserStyle== */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 @-moz-document domain("wuxiaworld.site") {
+  /** FONT **/
+
+	@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
   /** GENERAL **/
 
   .c-blog-post .entry-content {

@@ -1,14 +1,16 @@
 /* ==UserStyle==
 @name         BobbyWibowo-freewebnovel.noveleast.com
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.3
+@version      1.0.4
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/freewebnovel.noveleast.com.user.css
 @license      MIT
 ==/UserStyle== */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 @-moz-document domain("freewebnovel.noveleast.com"), domain("freewebnovel.comenovel.com") {
+  /** FONT **/
+
+	@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
   /** GENERAL **/
 
   body.night .m-read {

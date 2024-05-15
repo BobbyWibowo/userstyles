@@ -1,14 +1,16 @@
 /* ==UserStyle==
 @name         BobbyWibowo-slothtranslationsblog.com
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.1
+@version      1.0.2
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/slothtranslationsblog.com.user.css
 @license      MIT
 ==/UserStyle== */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 @-moz-document domain("slothtranslationsblog.com") {
+  /** FONT **/
+
+	@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
   /** GENERAL **/
 
   body,
