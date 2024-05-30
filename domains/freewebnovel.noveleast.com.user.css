@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-freewebnovel.noveleast.com
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.4
+@version      1.0.5
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/freewebnovel.noveleast.com.user.css
 @license      MIT
 ==/UserStyle== */
@@ -36,7 +36,7 @@
   .font-box .item:nth-child(2) .right::after {
     display: block;
     content: "Times New Roman = Merriweather";
-    font-size: 0.75rem;
+    font-size: 11px;
     color: orange;
   }
 
@@ -49,7 +49,7 @@
   .font-box .item:nth-child(3) .right::after {
     display: block;
     content: "18px = 19px";
-    font-size: 0.75rem;
+    font-size: 11px;
     color: orange;
   }
 

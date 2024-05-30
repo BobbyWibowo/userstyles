@@ -1,0 +1,68 @@
+/* ==UserStyle==
+@name         BobbyWibowo-novelfull.com
+@namespace    https://github.com/BobbyWibowo/userstyles
+@version      1.0.0
+@updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/novelfull.com.user.css
+@license      MIT
+==/UserStyle== */
+
+@-moz-document domain("novelfull.com") {
+  /** FONT **/
+
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+  /** GENERAL **/
+
+  .dark-background {
+    background: #000 !important;
+  }
+
+  .dark-background .chapter .chapter-c,
+  .dark-background .chapter .chapter-c p,
+  .dark-background .chapter .chapter-title {
+    color: #fff !important;
+  }
+
+  .dark-background .breadcrumb-container a,
+  .dark-background .breadcrumb-container a:hover,
+  .dark-background .breadcrumb-container a:focus,
+  .dark-background .breadcrumb-container li::before {
+    color: #000 !important;
+  }
+
+  #chapter {
+    max-width: 900px !important;
+  }
+
+  @media only screen and (width <= 767px) {
+    #chapter {
+      padding: 0 16px !important;
+    }
+  }
+
+  /** Times New Roman -> Merriweather **/
+
+  #options .settings .form-group:nth-child(2) :nth-child(2)::after {
+    display: block;
+    content: "Times New Roman = Merriweather";
+    font-size: 11px;
+    color: orange;
+  }
+
+  #chapter-content[style*="Times New Roman"] {
+    font-family: Merriweather, serif !important
+  }
+
+  /** Font size: 18px -> 19px **/
+
+  #options .settings .form-group:nth-child(3) :nth-child(2)::after {
+    display: block;
+    content: "18px = 19px";
+    font-size: 11px;
+    color: orange;
+  }
+
+  #chapter-content[style*="18px"] {
+    font-size: 19px !important;
+  }
+}
