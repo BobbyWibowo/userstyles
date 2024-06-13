@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.1
+@version      1.0.2
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -13,6 +13,7 @@
   .work-interactions-like, /* like button (mobile) */
   .kblezP, /* recommended popup after favoriting */
   .recommend-slidein-booster, /* recommended popup after favoriting (mobile) */
+  .illust-recommender-spa, /* recommended illustrations popup after favoriting (mobile) */
   .cVFqOO, /* ad popup after favoriting */
   .work-interactions .tooltip-container /* favorite guide tooltip */ {
     display: none !important;
