@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-wuxiaworld.site
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.9
+@version      1.0.10
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/wuxiaworld.site.user.css
 @license      MIT
 ==/UserStyle== */
@@ -20,7 +20,7 @@
 
   @media only screen and (width <= 767px) {
     .main-col {
-      padding: 0 16px !important;
+      padding: 0 21px !important;
     }
   }
 
