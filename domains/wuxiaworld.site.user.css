@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-wuxiaworld.site
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.7
+@version      1.0.8
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/wuxiaworld.site.user.css
 @license      MIT
 ==/UserStyle== */
@@ -19,9 +19,17 @@
   }
 
   @media only screen and (width <= 767px) {
-    #chapter {
+    .main-col {
       padding: 0 16px !important;
     }
+  }
+
+  .reading-manga .reading-content {
+    padding: 0 !important;
+  }
+
+  .c-blog-post .entry-content .entry-content_wrap {
+    line-height: 180% !important;
   }
 
   /** SEPIA MODE **/
@@ -33,6 +41,7 @@
 	}
 
   body.text-ui-yellow {
+    background: #eae4d3;
     color: #666
   }
 
