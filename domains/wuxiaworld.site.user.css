@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-wuxiaworld.site
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.8
+@version      1.0.9
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/wuxiaworld.site.user.css
 @license      MIT
 ==/UserStyle== */
@@ -42,10 +42,14 @@
 
   body.text-ui-yellow {
     background: #eae4d3;
-    color: #666
+    color: #2b2b2b
   }
 
-  .c-breadcrumb .breadcrumb li a {
+  body.text-ui-yellow .body-wrap {
+    background: #eae4d3
+  }
+
+  body.text-ui-light .c-breadcrumb .breadcrumb li a {
     color: #000
   }
 
