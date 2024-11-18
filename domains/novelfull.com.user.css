@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-novelfull.com
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.2
+@version      1.0.3
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/novelfull.com.user.css
 @license      MIT
 ==/UserStyle== */
@@ -38,6 +38,13 @@
 
   #chapter {
     max-width: 900px !important;
+  }
+
+  #chapter-content {
+		text-align: justify !important;
+		hyphens: auto;
+		text-justify: inter-character;
+    line-height: calc(1ex / 0.32);
   }
 
   @media only screen and (width <= 767px) {

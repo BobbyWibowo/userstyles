@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-wuxiaworld.site
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.13
+@version      1.0.14
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/wuxiaworld.site.user.css
 @license      MIT
 ==/UserStyle== */
@@ -33,7 +33,10 @@
   }
 
   .c-blog-post .entry-content .entry-content_wrap .text-left {
-    line-height: 180%;
+		text-align: justify !important;
+		hyphens: auto;
+		text-justify: inter-character;
+    line-height: calc(1ex / 0.32);
   }
 
 	.c-blog-post .entry-content .entry-content_wrap .text-left a[href*="wuxiaworld.site"] {
