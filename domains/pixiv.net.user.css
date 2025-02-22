@@ -1,21 +1,117 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.2
+@version      1.0.3
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
 
 @-moz-document domain("pixiv.net") {
-  #user-recommender, /* recommended users */
-  .ddXsIb, /* recommended users (mobile) */
-  .eqsIB, /* like button */
-  .work-interactions-like, /* like button (mobile) */
-  .kblezP, /* recommended popup after favoriting */
-  .recommend-slidein-booster, /* recommended popup after favoriting (mobile) */
-  .illust-recommender-spa, /* recommended illustrations popup after favoriting (mobile) */
-  .cVFqOO, /* ad popup after favoriting */
-  .work-interactions .tooltip-container /* favorite guide tooltip */ {
+  /* desktop only:
+    recommended users
+    recommended popup after favoriting
+    ad popup after favoriting
+    favorite guide tooltip
+    expanded view like button
+    expanded view share button
+    expanded view three dots button
+    expanded view booth popup
+    expanded view stats
+  */
+  #user-recommender,
+  .kblezP,
+  .cVFqOO,
+  .work-interactions .tooltip-container,
+  .eqsIB,
+  .bTImJG,
+  .cHTpl,
+  .laisPN,
+  .dpDffd {
     display: none !important;
+  }
+
+  /* mobile only:
+    recommended users
+    like button
+    recommended popup after favoriting
+    recommended illustrations popup after favoriting
+  */
+  .ddXsIb,
+  .work-interactions-like,
+  .recommend-slidein-booster,
+  .illust-recommender-spa {
+    display: none !important;
+  }
+
+  /* fix post tags container's margin when recommended popup after favoriting appears */
+  .fUOxGs {
+    margin-top: 32px !important;
+  }
+
+  /* extra right margin for comment sticker button */
+  .pWMGVnmagktZH1rG {
+    margin-right: calc(2px + 20px);
+  }
+
+  /* highlight artists */
+  .IYOBi:link,
+  .jNkIXf:link,
+  .frMqze:link,
+  .gPabZC:link,
+  [data-ga4-label="user_name_link"]:link {
+    color: #1fa3fb;
+  }
+
+  /* highlight visited artists */
+  .IYOBi:visited,
+  .jNkIXf:visited,
+  .frMqze:visited,
+  .gPabZC:visited,
+  [data-ga4-label="user_name_link"]:visited {
+    color: #ffadff;
+  }
+
+  /* highlight visited artwork */
+  .bOcolJ:visited,
+  .hQOtRd:visited,
+  .flVXAE:visited {
+    color: #ffadff;
+  }
+
+  /* always show floating illust controls */
+  .hGOogv,
+  .iqBFxD {
+    transform: translateY(0%) !important;
+  }
+
+  /* favorite button */
+  .fgVkZi:not(:hover) .fYcrPo {
+    animation: pulse 0.75s linear infinite;
+  }
+
+  .fgVkZi:not(:hover) .bXjFLc {
+    opacity: 0.75;
+  }
+
+  @keyframes pulse {
+    0% {
+      opacity: 0.25;
+    }
+
+    25% {
+      opacity: 0.625;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    75% {
+      opacity: 0.625;
+    }
+
+    100% {
+      opacity: 0.25;
+    }
   }
 }
