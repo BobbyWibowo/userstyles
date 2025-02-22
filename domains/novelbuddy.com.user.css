@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-novelbuddy.com
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.1
+@version      1.0.2
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/novelbuddy.com.user.css
 @license      MIT
 ==/UserStyle== */
@@ -9,12 +9,12 @@
 @-moz-document domain("novelbuddy.com") {
   /** FONT **/
 
-	@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
   /** GENERAL **/
   body.dark-mode {
     background: #000 !important;
-    color: #fff !important
+    color: #fff !important;
   }
 
   body.dark-mode .main-container.viewer,
@@ -25,11 +25,11 @@
 
   body.dark-mode #chapter__content {
     background: #000 !important;
-    color: #fff !important
+    color: #fff !important;
   }
 
   #chapter__content {
-    font-family: Merriweather, serif !important
+    font-family: Merriweather, serif !important;
   }
 
   #listen-chapter {
@@ -38,11 +38,11 @@
 
   #comment-form .tox-tinymce,
   #comment-list {
-    filter: invert(1)
+    filter: invert(1);
   }
 
   #comment-form img,
   #comment-list img {
-    filter: invert(1)
+    filter: invert(1);
   }
 }

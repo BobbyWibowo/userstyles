@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-slothtranslationsblog.com
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.2
+@version      1.0.3
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/slothtranslationsblog.com.user.css
 @license      MIT
 ==/UserStyle== */
@@ -9,25 +9,25 @@
 @-moz-document domain("slothtranslationsblog.com") {
   /** FONT **/
 
-	@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
   /** GENERAL **/
 
   body,
   body.custom-background {
     background-image: none;
-    background-color: #000
+    background-color: #000;
   }
 
   .site {
     margin: 0;
     padding: 24px 16px;
-    background: none
+    background: none;
   }
 
   .entry-content {
     font-family: Merriweather, serif;
-    font-size: 19px
+    font-size: 19px;
   }
 
   body,
@@ -44,7 +44,7 @@
   .main-navigation a,
   .site-title a,
   .site-description {
-    color: #fff
+    color: #fff;
   }
 
   a,
@@ -71,11 +71,11 @@
   .current-menu-item a,
   .current_page_item a:visited,
   .current-menu-item a:visited {
-    color: #1670bf
+    color: #1670bf;
   }
 
   .main-navigation a:visited {
-    color: #1670bf
+    color: #1670bf;
   }
 
   button,
@@ -84,6 +84,6 @@
   input[type="submit"],
   .button,
   .button:visited {
-    color: #000
+    color: #000;
   }
 }

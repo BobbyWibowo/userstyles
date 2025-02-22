@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-deeptranslations5.wordpress.com
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.3
+@version      1.0.4
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/deeptranslations5.wordpress.com.user.css
 @license      MIT
 ==/UserStyle== */
@@ -9,20 +9,20 @@
 @-moz-document domain("deeptranslations5.wordpress.com") {
   /** FONT **/
 
-	@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
   /** GENERAL **/
 
   body,
   body.custom-background {
     background-color: #000;
-    color: #fff
+    color: #fff;
   }
 
   .entry-content {
     font-family: Merriweather, serif;
     font-size: 19px;
-    padding: 0 16px
+    padding: 0 16px;
   }
 
   .wf-active .entry-content p,
@@ -30,12 +30,12 @@
   .wf-active .entry-content ul,
   .wf-active .entry-content dl,
   .wf-active .entry-content dt {
-    font-family: Merriweather, serif
+    font-family: Merriweather, serif;
   }
 
   .entry-content > :not(.alignwide, .alignfull, .alignleft, .alignright, .is-style-wide) {
     max-width: 100%;
-    width: 100%
+    width: 100%;
   }
 
   .site-description,
@@ -59,7 +59,7 @@
   .has-drop-cap:not(:focus)::first-letter,
   .wp-block-button.is-style-outline,
   a {
-    color: #1670bf
+    color: #1670bf;
   }
 
   cite,
@@ -81,6 +81,6 @@
   .entry-content hr:not(.has-background),
   hr.styled-separator,
   :root .has-secondary-color {
-    color: #fff
+    color: #fff;
   }
 }
