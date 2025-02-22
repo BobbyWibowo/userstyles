@@ -10,6 +10,7 @@
     "no-invalid-position-at-import-rule": null,
     "selector-class-pattern": null,
     "selector-id-pattern": null,
-    "@stylistic/block-opening-brace-space-before": null
+    "@stylistic/block-opening-brace-space-before": null,
+    "@stylistic/max-line-length": null
   }
 }

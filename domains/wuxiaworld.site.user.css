@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-wuxiaworld.site
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.16
+@version      1.0.17
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/wuxiaworld.site.user.css
 @license      MIT
 ==/UserStyle== */
@@ -16,6 +16,8 @@
   :root {
     --dark-theme-background: #212121;
     --dark-theme-foreground: #ececec;
+    --dark-theme-foreground-secondary: #b4b4b4;
+    --dark-theme-background-secondary: #2f2f2f;
     --sepia-theme-background: #eae4d3;
     --sepia-theme-foreground: #2b2b2b;
   }
@@ -50,6 +52,10 @@
 
   .c-blog-post .entry-content .entry-content_wrap .text-left a[href*="wuxiaworld.site"] {
     display: none !important;
+  }
+
+  body.modal-open .modal .modal-content label {
+    cursor: pointer;
   }
 
   /** SEPIA MODE **/
@@ -91,6 +97,14 @@
     color: var(--dark-theme-foreground);
   }
 
+  body.text-ui-light .site-header .c-sub-header-nav .c-sub-nav_wrap .sub-nav_content .sub-nav_list li:hover > a {
+    color: var(--dark-theme-foreground-secondary);
+  }
+
+  body.text-ui-light .site-header .c-sub-header-nav .c-sub-nav_wrap .sub-nav_content .sub-nav_list > li.menu-item-has-children > ul.sub-menu {
+    background: var(--dark-theme-background-secondary);
+  }
+
   body.text-ui-light .site-header .c-sub-header-nav.with-border {
     border-bottom-color: var(--dark-theme-background);
   }
@@ -112,6 +126,41 @@
     color: var(--dark-theme-foreground);
   }
 
+  body.text-ui-light.modal-open .modal .modal-content {
+    background: var(--dark-theme-background);
+    border-color: var(--dark-theme-background-secondary);
+  }
+
+  body.text-ui-light.modal-open .modal .modal-dialog {
+    background: none;
+  }
+
+  body.text-ui-light.modal-open .modal .modal-content .theme-set-upDown,
+  body.text-ui-light.modal-open .modal .modal-content .theme-set-font strong {
+    background-color: var(--dark-theme-background-secondary);
+  }
+
+  body.text-ui-light.modal-open .modal .modal-content .modal-header .close,
+  body.text-ui-light.modal-open .modal .modal-content .modal-footer .close {
+    color: var(--dark-theme-foreground);
+  }
+
+  body.text-ui-light.modal-open .modal .modal-content .theme-set-upDown i,
+  body.text-ui-light #frm-wp-manga-setting h3,
+  body.text-ui-light #frm-wp-manga-setting h4,
+  body.text-ui-light #frm-wp-manga-setting label {
+    color: var(--dark-theme-foreground);
+  }
+
+  body.text-ui-light.modal-open .modal .modal-content .theme-set-upDown i:hover,
+  body.text-ui-light #frm-wp-manga-setting label:hover {
+    color: var(--dark-theme-foreground-secondary);
+  }
+
+  body.text-ui-light .site-footer {
+    border-bottom-color: var(--dark-theme-background-secondary);
+  }
+
   /* Comments */
 
   body.text-ui-light #wpdUserContentInfo {
@@ -119,9 +168,16 @@
   }
 
   body.text-ui-light .wpd-login,
+  body.text-ui-light .wpd-wrapper .wpd-list-item:hover,
+  body.text-ui-light .wpd-wrapper .wpd-item-link.wpd-comment-meta {
+    color: var(--dark-theme-foreground);
+  }
+
+  body.text-ui-light .wpd-wrapper .wpd-list-item.wpd-active,
+  body.text-ui-light .wpd-wrapper .wpd-post-item-link,
   body.text-ui-light #wpdcom .wpd-sbs-toggle,
   body.text-ui-light #wpdcom .wpd-thread-head .wpd-thread-info,
   body.text-ui-light #wpdcom .wpd-thread-head .wpdiscuz-user-settings {
-    color: var(--dark-theme-foreground);
+    color: var(--dark-theme-foreground-secondary);
   }
 }
