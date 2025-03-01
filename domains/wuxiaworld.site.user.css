@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-wuxiaworld.site
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.18
+@version      1.0.19
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/wuxiaworld.site.user.css
 @license      MIT
 ==/UserStyle== */
@@ -16,8 +16,8 @@
   :root {
     --dark-theme-background: #000;
     --dark-theme-foreground: #ececec;
-    --dark-theme-foreground-secondary: #212121;
-    --dark-theme-background-secondary: #2f2f2f;
+    --dark-theme-background-secondary: #212121;
+    --dark-theme-foreground-secondary: #b4b4b4;
     --sepia-theme-background: #eae4d3;
     --sepia-theme-foreground: #2b2b2b;
   }
