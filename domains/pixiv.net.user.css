@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.3
+@version      1.0.4
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -17,6 +17,7 @@
     expanded view three dots button
     expanded view booth popup
     expanded view stats
+		manga view like button
   */
   #user-recommender,
   .kblezP,
@@ -26,7 +27,8 @@
   .bTImJG,
   .cHTpl,
   .laisPN,
-  .dpDffd {
+  .dpDffd,
+  .kkAoHo {
     display: none !important;
   }
 
@@ -57,7 +59,6 @@
   .IYOBi:link,
   .jNkIXf:link,
   .frMqze:link,
-  .gPabZC:link,
   [data-ga4-label="user_name_link"]:link {
     color: #1fa3fb;
   }
@@ -66,12 +67,11 @@
   .IYOBi:visited,
   .jNkIXf:visited,
   .frMqze:visited,
-  .gPabZC:visited,
   [data-ga4-label="user_name_link"]:visited {
     color: #ffadff;
   }
 
-  /* highlight visited artwork */
+  /* highlight visited artworks */
   .bOcolJ:visited,
   .hQOtRd:visited,
   .flVXAE:visited {
