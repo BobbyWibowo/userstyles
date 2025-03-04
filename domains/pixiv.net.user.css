@@ -1,24 +1,26 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.4
+@version      1.0.5
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
 
 @-moz-document domain("pixiv.net") {
   /* desktop only:
-    recommended users
-    recommended popup after favoriting
-    ad popup after favoriting
-    favorite guide tooltip
-    expanded view like button
-    expanded view share button
-    expanded view three dots button
-    expanded view booth popup
-    expanded view stats
-		manga view like button
-  */
+	 * premium banner
+   * recommended users
+   * recommended popup after favoriting
+   * ad popup after favoriting
+   * favorite guide tooltip
+   * expanded view like button
+   * expanded view share button
+   * expanded view three dots button
+   * expanded view booth popup
+   * expanded view stats
+	 * manga view like button
+   */
+  #__premium_banner,
   #user-recommender,
   .kblezP,
   .cVFqOO,
@@ -33,16 +35,29 @@
   }
 
   /* mobile only:
-    recommended users
-    like button
-    recommended popup after favoriting
-    recommended illustrations popup after favoriting
-  */
+   * recommended users
+   * like button
+   * recommended popup after favoriting
+   * recommended illustrations popup after favoriting
+   */
   .ddXsIb,
   .work-interactions-like,
   .recommend-slidein-booster,
   .illust-recommender-spa {
     display: none !important;
+  }
+
+  /* home's recommended works + sidebar */
+  :root {
+    --street-work-content-width: 90%;
+  }
+
+  .cgtmvA > .grid > .bg-background2 {
+    display: none !important;
+  }
+
+  .cgtmvA > .grid {
+    grid-template-columns: 100% 0;
   }
 
   /* fix post tags container's margin when recommended popup after favoriting appears */
