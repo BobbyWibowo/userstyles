@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.5
+@version      1.0.6
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -47,13 +47,15 @@
     display: none !important;
   }
 
-  /* home's recommended works + sidebar */
-  :root {
-    --street-work-content-width: 90%;
-  }
-
+  /* home page, remove right sidebar */
   .cgtmvA > .grid > .bg-background2 {
     display: none !important;
+  }
+
+  /* home page, expand recommended works section to full width */
+  .cgtmvA > .grid > .bg-surface1 .w-\[var\(--street-work-content-width\)\] {
+    width: 75%;
+    min-width: var(--street-work-content-width);
   }
 
   .cgtmvA > .grid {
@@ -74,6 +76,7 @@
   .IYOBi:link,
   .jNkIXf:link,
   .frMqze:link,
+  .ranking-items.adjust .user-container:link,
   [data-ga4-label="user_name_link"]:link {
     color: #1fa3fb;
   }
@@ -82,6 +85,7 @@
   .IYOBi:visited,
   .jNkIXf:visited,
   .frMqze:visited,
+  .ranking-items.adjust .user-container:visited,
   [data-ga4-label="user_name_link"]:visited {
     color: #ffadff;
   }
@@ -89,7 +93,8 @@
   /* highlight visited artworks */
   .bOcolJ:visited,
   .hQOtRd:visited,
-  .flVXAE:visited {
+  .flVXAE:visited,
+  .ranking-items.adjust .title:visited {
     color: #ffadff;
   }
 
