@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.6
+@version      1.0.7
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -15,7 +15,6 @@
    * favorite guide tooltip
    * expanded view like button
    * expanded view share button
-   * expanded view three dots button
    * expanded view booth popup
    * expanded view stats
 	 * manga view like button
@@ -27,7 +26,6 @@
   .work-interactions .tooltip-container,
   .eqsIB,
   .bTImJG,
-  .cHTpl,
   .laisPN,
   .dpDffd,
   .kkAoHo {
