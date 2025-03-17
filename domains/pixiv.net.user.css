@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.7
+@version      1.0.8
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -100,36 +100,5 @@
   .hGOogv,
   .iqBFxD {
     transform: translateY(0%) !important;
-  }
-
-  /* favorite button */
-  .fgVkZi:not(:hover) .fYcrPo {
-    animation: pulse 0.75s linear infinite;
-  }
-
-  .fgVkZi:not(:hover) .bXjFLc {
-    opacity: 0.75;
-  }
-
-  @keyframes pulse {
-    0% {
-      opacity: 0.25;
-    }
-
-    25% {
-      opacity: 0.625;
-    }
-
-    50% {
-      opacity: 1;
-    }
-
-    75% {
-      opacity: 0.625;
-    }
-
-    100% {
-      opacity: 0.25;
-    }
   }
 }
