@@ -1,0 +1,75 @@
+/* ==UserStyle==
+@name         BobbyWibowo-readnovel.eu
+@namespace    https://github.com/BobbyWibowo/userstyles
+@version      1.0.0
+@updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/readnovel.eu.user.css
+@license      MIT
+==/UserStyle== */
+
+@-moz-document domain("readnovel.eu") {
+  /** FONT **/
+
+  @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+  /** GENERAL **/
+
+  :root {
+    --dark-theme-background: #000;
+    --dark-theme-foreground: #ececec;
+    --dark-theme-background-secondary: #212121;
+    --dark-theme-foreground-secondary: #b4b4b4;
+    --sepia-theme-background: #eae4d3;
+    --sepia-theme-foreground: #2b2b2b;
+  }
+
+  body > div[id="__next"] > .mantine-Paper-root > div:last-child > div:nth-child(2) > .mantine-Container-root:first-child > div:last-child > div[class*="mantine-"]:not(.mantine-Center-root, .mantine-Group-root),
+  body > div[id="__next"] > .mantine-Paper-root > div:last-child > div:nth-child(2) > div[class*="mantine-"]:not(.mantine-Container-root),
+  body > div:not([class]) > div[dir="ltr"] > div[class*="mantine-"] > button.mantine-UnstyledButton-root {
+    display: none !important;
+  }
+
+  /* NOTE: Does not completely hide this block, to test if this accidentally hides chapter texts. */
+  #chapterText ~ .mantine-Container-root:not(#chapterText) {
+    height: 50px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  #chapterText {
+    font-family: Merriweather, serif !important;
+  }
+
+  .mantine-nlxrlp {
+    background: var(--dark-theme-background);
+    color: var(--dark-theme-foreground);
+  }
+
+  .mantine-3bcfzs {
+    background: var(--dark-theme-background);
+    color: var(--dark-theme-foreground);
+  }
+
+  .mantine-nlxrlp #chapterText {
+    color: var(--dark-theme-foreground) !important;
+  }
+
+  .mantine-13c6hg8 {
+    margin-bottom: 16px;
+  }
+
+  .mantine-18ybim5 {
+    background: none;
+  }
+
+  @media (width <= 47.9375em) {
+    .mantine-sqid3s {
+      max-width: unset;
+    }
+  }
+
+  @media (width <= 61.9375em) {
+    .mantine-18ybim5 {
+      padding: 0 21px;
+    }
+  }
+}
