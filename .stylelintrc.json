@@ -1,7 +1,7 @@
 {
   "extends": [
     "stylelint-config-standard",
-		"@stylistic/stylelint-config"
+    "@stylistic/stylelint-config"
   ],
   "rules": {
     "at-rule-no-vendor-prefix": null,
