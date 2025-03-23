@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-readnovel.eu
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.2
+@version      1.0.3
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/readnovel.eu.user.css
 @license      MIT
 ==/UserStyle== */
@@ -25,8 +25,8 @@
   .mantine-1ef0jk6,
   .mantine-1oq1z8z,
   .mantine-1qx88rd,
-  .mantine-1un7m44,
-  .mantine-1r9ygf5 {
+  .mantine-1r9ygf5,
+  :has(~ .mantine-d46inf) {
     display: none !important;
   }
 
@@ -42,6 +42,7 @@
   .mantine-1npt4tv,
   .mantine-18ybim5 {
     background: none;
+    box-shadow: none;
   }
 
   @media (width <= 47.9375em) {
@@ -51,6 +52,7 @@
   }
 
   @media (width <= 61.9375em) {
+    .mantine-1emc9ft,
     .mantine-1npt4tv,
     .mantine-18ybim5 {
       padding: 0 21px;
