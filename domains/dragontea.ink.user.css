@@ -1,12 +1,16 @@
 /* ==UserStyle==
 @name         BobbyWibowo-dragontea.ink
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.0
+@version      1.0.1
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/dragontea.ink.user.css
 @license      MIT
 ==/UserStyle== */
 
 @-moz-document domain("dragontea.ink") {
+  /** FONT **/
+
+  @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
   /** GENERAL **/
 
   :root {
@@ -19,6 +23,18 @@
   .c-ads,
   .go-to-top {
     display: none !important;
+  }
+
+  /* Needs a userscript to undo the site's Atbash cipher. */
+
+  /* https://greasyfork.org/en/scripts/530679-dragon-tea-undo-cipher */
+  :not(#higher_specificity) .chapter-type-text .reading-content :not(.dta *, .dta),
+  :not(#higher_specificity) .chapter-type-text .reading-content p:not(.dta p),
+  :not(#higher_specificity) .chapter-type-text .reading-content span:not(.dta span),
+  :not(#higher_specificity) .wp-manga-genre-novels .description-summary .summary__content,
+  :not(#higher_specificity) .wp-manga-genre-novels .description-summary .summary__content p,
+  :not(#higher_specificity) .wp-manga-genre-novels .description-summary .summary__content span {
+    font-family: Merriweather, serif !important;
   }
 
   :not(#higher_specificity) .chapter-type-text .reading-content .alert-warning {
