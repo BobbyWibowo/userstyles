@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-dragontea.ink
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.1
+@version      1.0.2
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/dragontea.ink.user.css
 @license      MIT
 ==/UserStyle== */
@@ -25,9 +25,9 @@
     display: none !important;
   }
 
-  /* Needs a userscript to undo the site's Atbash cipher. */
-
-  /* https://greasyfork.org/en/scripts/530679-dragon-tea-undo-cipher */
+  /* Needs a userscript to decipher the site's Atbash cipher.
+   * https://greasyfork.org/en/scripts/530679-dragon-tea-decipher
+   */
   :not(#higher_specificity) .chapter-type-text .reading-content :not(.dta *, .dta),
   :not(#higher_specificity) .chapter-type-text .reading-content p:not(.dta p),
   :not(#higher_specificity) .chapter-type-text .reading-content span:not(.dta span),
