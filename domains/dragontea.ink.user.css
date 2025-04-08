@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-dragontea.ink
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.2
+@version      1.0.3
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/dragontea.ink.user.css
 @license      MIT
 ==/UserStyle== */
@@ -35,6 +35,7 @@
   :not(#higher_specificity) .wp-manga-genre-novels .description-summary .summary__content p,
   :not(#higher_specificity) .wp-manga-genre-novels .description-summary .summary__content span {
     font-family: Merriweather, serif !important;
+    word-wrap: break-word;
   }
 
   :not(#higher_specificity) .chapter-type-text .reading-content .alert-warning {
