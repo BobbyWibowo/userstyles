@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.9
+@version      1.0.10
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -21,13 +21,13 @@
 	 * home multi view's recommended after favoriting
    */
   #__premium_banner,
-  #user-recommender,
-  .kblezP,
+  .jrLxAu,
+  .fuqIIO,
   .cVFqOO,
   .work-interactions .tooltip-container,
-  .eqsIB,
-  .bTImJG,
-  .laisPN,
+  .lazKws,
+  .kMujZH,
+  .hrktmS,
   .dpDffd,
   .kkAoHo,
   [data-ga4-label="user_popular_works"] {
@@ -63,7 +63,7 @@
   }
 
   /* fix post tags container's margin when recommended popup after favoriting appears */
-  .fUOxGs {
+  .ifPYni {
     margin-top: 32px !important;
   }
 
@@ -73,28 +73,24 @@
   }
 
   /* highlight artists */
-  .IYOBi:link,
-  .jNkIXf:link,
-  .frMqze:link,
+  .QzTPT:link,
   .ranking-items.adjust .user-container:link,
   [data-ga4-label="user_name_link"]:link {
     color: #1fa3fb;
   }
 
   /* highlight visited artists */
-  .IYOBi:visited,
-  .jNkIXf:visited,
-  .frMqze:visited,
+  .QzTPT:visited,
   .ranking-items.adjust .user-container:visited,
   [data-ga4-label="user_name_link"]:visited {
     color: #ffadff;
   }
 
   /* highlight visited artworks */
-  .bOcolJ:visited,
-  .hQOtRd:visited,
-  .flVXAE:visited,
-  .ranking-items.adjust .title:visited {
+  .kmUlkw:visited,
+  .gtm-illust-recommend-title:visited,
+  .ranking-items.adjust .title:visited,
+  [data-ga4-label="title_link"]:visited {
     color: #ffadff;
   }
 
