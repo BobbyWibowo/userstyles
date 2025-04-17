@@ -9,6 +9,7 @@
 @-moz-document domain("pixiv.net") {
   /* desktop only:
 	 * premium banner
+	 * home's top promotion banner
    * recommended users
    * recommended popup after favoriting
    * ad popup after favoriting
@@ -21,6 +22,7 @@
 	 * home multi view's recommended after favoriting
    */
   #__premium_banner,
+  .sc-7b5ed552-1,
   .jrLxAu,
   .fuqIIO,
   .cVFqOO,
