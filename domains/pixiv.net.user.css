@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.13
+@version      1.0.14
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -84,8 +84,17 @@
     margin-right: calc(2px + 20px);
   }
 
-  /* highlight artists */
+  /* highlight artists:
+	 * general artist links
+	 * profile's following page
+	 * expanded view's right sidebar
+	 * expanded view's bottom bar
+	 * rankings page
+	 */
   .QzTPT:link,
+  .eEyknh:link,
+  .hUbBIL:link,
+  .jjSPzj:link,
   .ranking-items.adjust .user-container:link,
   [data-ga4-label="user_name_link"]:link {
     color: #1fa3fb;
@@ -93,6 +102,9 @@
 
   /* highlight visited artists */
   .QzTPT:visited,
+  .eEyknh:visited,
+  .hUbBIL:visited,
+  .jjSPzj:visited,
   .ranking-items.adjust .user-container:visited,
   [data-ga4-label="user_name_link"]:visited {
     color: #ffadff;
@@ -107,8 +119,7 @@
   }
 
   /* always show floating illust controls */
-  .hGOogv,
-  .iqBFxD {
+  .gQSjHg {
     transform: translateY(0%) !important;
   }
 }
