@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.14
+@version      1.0.15
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -11,15 +11,17 @@
 	 * premium banner
 	 * home's top promotion banner
    * recommended users
-   * recommended popup after favoriting
-   * ad popup after favoriting
+   * recommended popup after bookmarking
+   * ad popup after bookmarking
    * favorite guide tooltip
    * expanded view like button
    * expanded view share button
    * expanded view booth popup
    * expanded view stats
 	 * manga view like button
-	 * home multi view's recommended after favoriting
+	 * manga view bookmark button's stat
+	 * manga view bookmark button's stat (bookmarked)
+	 * home multi view's recommended after bookmarking
 	 * "sort by popularity" premium button
    * "premium free trial" links
 	 * popular search trial
@@ -34,7 +36,9 @@
   .kMujZH,
   .hrktmS,
   .dpDffd,
-  .kkAoHo,
+  .fVDqaQ,
+  .ikxzwG span,
+  .hOoWOp span,
   [data-ga4-label="user_popular_works"],
   .jIlmtS,
   a[href*="p=free_campaign"],
@@ -46,8 +50,8 @@
 	 * recommended users after following
    * recommended users
    * like button
-   * recommended popup after favoriting
-   * recommended illustrations popup after favoriting
+   * recommended popup after bookmarking
+   * recommended illustrations popup after bookmarking
 	 * popular search trial
    */
   #user-recommender,
@@ -74,7 +78,7 @@
     grid-template-columns: 100% 0;
   }
 
-  /* fix post tags container's margin when recommended popup after favoriting appears */
+  /* fix post tags container's margin when recommended popup appears after bookmarking */
   .ifPYni {
     margin-top: 32px !important;
   }
