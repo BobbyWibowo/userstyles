@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.15
+@version      1.0.16
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -44,6 +44,17 @@
   a[href*="p=free_campaign"],
   .icUpwV:has(a[href*="p=free_campaign"]) {
     display: none !important;
+  }
+
+  /* hide bookmark stats in classic pages (e.g, bookmark_add.php) */
+  ._unit.complete-unit .bookmark-count {
+    font-size: 0 !important;
+    position: relative;
+    top: -4px;
+  }
+
+  ._unit.complete-unit .bookmark-count ._icon {
+    vertical-align: -4px !important;
   }
 
   /* mobile only:
@@ -93,28 +104,34 @@
 	 * profile's following page
 	 * expanded view's right sidebar
 	 * expanded view's bottom bar
+	 * recommended artworks
 	 * rankings page
 	 */
   .QzTPT:link,
   .eEyknh:link,
   .hUbBIL:link,
   .jjSPzj:link,
+  .gtm-illust-recommend-user-name:link,
   .ranking-items.adjust .user-container:link,
   [data-ga4-label="user_name_link"]:link {
     color: #1fa3fb;
   }
 
-  /* highlight visited artists */
   .QzTPT:visited,
   .eEyknh:visited,
   .hUbBIL:visited,
   .jjSPzj:visited,
+  .gtm-illust-recommend-user-name:visited,
   .ranking-items.adjust .user-container:visited,
   [data-ga4-label="user_name_link"]:visited {
     color: #ffadff;
   }
 
-  /* highlight visited artworks */
+  /* highlight visited artworks:
+	 * general artwork links
+	 * recommended artworks
+	 * rankings page
+	 */
   .kmUlkw:visited,
   .gtm-illust-recommend-title:visited,
   .ranking-items.adjust .title:visited,
