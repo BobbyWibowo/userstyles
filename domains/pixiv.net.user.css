@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.20
+@version      1.0.21
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -64,6 +64,7 @@
    * recommended users
    * expanded view like button
 	 * expanded view share button
+	 * expanded view stats
    * recommended popup after bookmarking
    * recommended illustrations popup after bookmarking
 	 * popular search trial
@@ -72,6 +73,7 @@
   .ddXsIb,
   .work-interactions-like,
   .gtm-work-interactions-share,
+  .work-stats > *:not(.times-wrap),
   .recommend-slidein-booster,
   .illust-recommender-spa,
   .popular-search-trial {
