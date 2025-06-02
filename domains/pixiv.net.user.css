@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.21
+@version      1.0.22
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -26,6 +26,7 @@
 	 * "sort by popularity" premium button
    * "premium free trial" links
 	 * popular search trial
+	 * home sidebar section: ongoing contests
    */
   #__premium_banner,
   .sc-7b5ed552-1,
@@ -44,7 +45,8 @@
   [data-ga4-label="user_popular_works"],
   .jIlmtS,
   a[href*="p=free_campaign"],
-  .icUpwV:has(a[href*="p=free_campaign"]) {
+  .icUpwV:has(a[href*="p=free_campaign"]),
+  .hSNbaL > .grid > :nth-child(2) .flex-col.gap-8:has(a[href*="/contest/"]) {
     display: none !important;
   }
 
@@ -138,7 +140,7 @@
 	 * recommended artworks
 	 * rankings page
 	 */
-  .kmUlkw:visited,
+  .jpDIhh:visited,
   .gtm-illust-recommend-title:visited,
   .ranking-items.adjust .title:visited,
   [data-ga4-label="title_link"]:visited {
