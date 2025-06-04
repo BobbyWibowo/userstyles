@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.22
+@version      1.0.23
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -27,6 +27,7 @@
    * "premium free trial" links
 	 * popular search trial
 	 * home sidebar section: ongoing contests
+   * artist page's booth footer
    */
   #__premium_banner,
   .sc-7b5ed552-1,
@@ -34,10 +35,10 @@
   .fuqIIO,
   .cVFqOO,
   .work-interactions .tooltip-container,
-  .lazKws,
-  .kMujZH,
+  .cNcUof,
+  .krTSEc,
   .iMaVxE,
-  .hrktmS,
+  .KmAnp,
   .cmCMBu:nth-child(3),
   .fVDqaQ,
   .ikxzwG span,
@@ -46,7 +47,8 @@
   .jIlmtS,
   a[href*="p=free_campaign"],
   .icUpwV:has(a[href*="p=free_campaign"]),
-  .hSNbaL > .grid > :nth-child(2) .flex-col.gap-8:has(a[href*="/contest/"]) {
+  .hSNbaL > .grid > :nth-child(2) .flex-col.gap-8:has(a[href*="/contest/"]),
+  .fwtRWn {
     display: none !important;
   }
 
@@ -98,7 +100,7 @@
   }
 
   /* fix post tags container's margin when recommended popup appears after bookmarking */
-  .iHtKCP {
+  .cMZhhC {
     margin-top: 32px !important;
   }
 
@@ -122,7 +124,7 @@
   .gtm-illust-recommend-user-name:link,
   .ranking-items.adjust .user-container:link,
   [data-ga4-label="user_name_link"]:link {
-    color: #1fa3fb;
+    color: #1fa3fb !important;
   }
 
   .QzTPT:visited,
@@ -132,19 +134,25 @@
   .gtm-illust-recommend-user-name:visited,
   .ranking-items.adjust .user-container:visited,
   [data-ga4-label="user_name_link"]:visited {
-    color: #ffadff;
+    color: #ffadff !important;
   }
 
   /* highlight visited artworks:
 	 * general artwork links
+   * following page
+   * artist/tags page
+   * artist/tags page (novel)
 	 * recommended artworks
 	 * rankings page
 	 */
   .jpDIhh:visited,
   .gtm-illust-recommend-title:visited,
+  .fNOdSq:visited,
+  .fkOLKW:visited,
+  .gtm-followlatestpage-thumbnail-link:visited,
   .ranking-items.adjust .title:visited,
   [data-ga4-label="title_link"]:visited {
-    color: #ffadff;
+    color: #ffadff !important;
   }
 
   /* always show floating illust controls */
