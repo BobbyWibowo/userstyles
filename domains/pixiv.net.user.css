@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.25
+@version      1.0.26
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -113,6 +113,7 @@
 	 * general artist links
 	 * profile's following page
 	 * expanded view's right sidebar
+   * expanded view's right sidebar (alt)
 	 * expanded view's bottom bar
 	 * recommended artworks
 	 * rankings page
@@ -120,6 +121,7 @@
   .QzTPT:link,
   .eEyknh:link,
   .hUbBIL:link,
+  .kxUxDs:link,
   .jjSPzj:link,
   .gtm-illust-recommend-user-name:link,
   .ranking-items.adjust .user-container:link,
@@ -130,6 +132,7 @@
   .QzTPT:visited,
   .eEyknh:visited,
   .hUbBIL:visited,
+  .kxUxDs:visited,
   .jjSPzj:visited,
   .gtm-illust-recommend-user-name:visited,
   .ranking-items.adjust .user-container:visited,
