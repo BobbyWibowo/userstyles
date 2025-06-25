@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-dragontea.ink
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.4
+@version      1.0.5
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/dragontea.ink.user.css
 @license      MIT
 ==/UserStyle== */
@@ -44,6 +44,16 @@
     font-size: 12px;
     background: none;
     border: none;
+  }
+
+  body.manga-page .summary__content.show-more {
+    height: auto;
+  }
+
+  body.manga-page .c-content-readmore,
+  body.manga-page .c-chapter-readmore,
+  body.manga-page .summary__content.show-more::after {
+    display: none;
   }
 
   .main-col {
