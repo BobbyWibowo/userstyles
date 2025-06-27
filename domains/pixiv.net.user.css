@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.26
+@version      1.0.27
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -100,7 +100,7 @@
   }
 
   /* fix post tags container's margin when recommended popup appears after bookmarking */
-  .cMZhhC {
+  .hqEjTj {
     margin-top: 32px !important;
   }
 
@@ -159,7 +159,7 @@
   }
 
   /* always show floating illust controls */
-  .gQSjHg {
+  .ejbgqC {
     transform: translateY(0%) !important;
   }
 }
