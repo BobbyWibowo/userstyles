@@ -1,12 +1,19 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.28
+@version      1.0.29
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
 
 @-moz-document domain("pixiv.net") {
+  body,
+  input,
+  button,
+  .cBLcLA {
+    font-family: Ubuntu, sans-serif !important;
+  }
+
   /* desktop only:
 	 * premium banner
 	 * home's top promotion banner
@@ -31,6 +38,7 @@
    * premium campaign links
 	 * home sidebar section: ongoing contests
    * artist page's booth footer
+   * bottom announcements on right sidebar (typically used for contests)
    */
   #__premium_banner,
   .sc-7b5ed552-1,
@@ -54,7 +62,8 @@
   .icUpwV:has(a[href*="p=free_campaign"]),
   a[href*="/premium/campaign/"],
   .hSNbaL > .grid > :nth-child(2) .flex-col.gap-8:has(a[href*="/contest/"]),
-  .fwtRWn {
+  .fwtRWn,
+  .pEWQe > .left-0 .sticky.bottom-0:last-child {
     display: none !important;
   }
 
