@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.29
+@version      1.0.30
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -26,8 +26,7 @@
    * expanded view booth popup
    * expanded view stats
 	 * expanded view booth sidebar
-   * expanded view limited-time effects
-   * expanded view limited-time effects link
+   * expanded view limited-time effects & link
 	 * manga view like button
 	 * manga view bookmark button's stat
 	 * manga view bookmark button's stat (bookmarked)
@@ -51,8 +50,7 @@
   .cONxpR,
   .KmAnp,
   .cmCMBu:nth-child(3),
-  .hIGkpG,
-  div.flex-col:has(img[src*="/seasonal-effect-tag/"]),
+  div:has(> img[src*="/seasonal-effect-tag/"], > a > img[src*="/seasonal-effect-tag/"]),
   .dLCbDu,
   .dVjvjM span,
   .bYzblb span,
