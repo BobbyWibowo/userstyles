@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.30
+@version      1.0.31
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -27,13 +27,13 @@
    * expanded view stats
 	 * expanded view booth sidebar
    * expanded view limited-time effects & link
+   * expanded view contest link
 	 * manga view like button
 	 * manga view bookmark button's stat
 	 * manga view bookmark button's stat (bookmarked)
 	 * home multi view's recommended after bookmarking
 	 * "sort by popularity" premium button
    * "premium free trial" links
-	 * popular search trial
    * premium campaign links
 	 * home sidebar section: ongoing contests
    * artist page's booth footer
@@ -45,12 +45,13 @@
   .fuqIIO,
   .cVFqOO,
   .work-interactions .tooltip-container,
-  .cNcUof,
-  .krTSEc,
+  .ilThsw,
+  .hsAsdT,
   .cONxpR,
   .KmAnp,
   .cmCMBu:nth-child(3),
   div:has(> img[src*="/seasonal-effect-tag/"], > a > img[src*="/seasonal-effect-tag/"]),
+  div:has(> a > img[src*="/contest_icon_"]),
   .dLCbDu,
   .dVjvjM span,
   .bYzblb span,
@@ -74,6 +75,34 @@
 
   ._unit.complete-unit .bookmark-count ._icon {
     vertical-align: -4px !important;
+  }
+
+  /* popular works */
+  .bJnszw {
+    mask: none !important;
+    flex-grow: 1 !important;
+
+    .gTqtqU {
+      width: 184px !important;
+    }
+
+    .gJuMUX {
+      border-radius: 8px !important;
+    }
+
+    .kvSWjG {
+      width: 184px !important;
+      height: 184px !important;
+    }
+
+    div:has(> img:not([src^="data"]))::after {
+      box-shadow: inset 0 0 0 3px var(--pixiv_utils_highlight_color) !important;
+    }
+  }
+
+  .fxWPVk,
+  .dYllpw {
+    display: none !important;
   }
 
   /* mobile only:
