@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.38
+@version      1.0.39
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -165,22 +165,22 @@
     margin-right: calc(2px + 20px);
   }
 
-  /* highlight artists */
+  /* highlight artist links */
+  [href*="users/"]:not([href*="/illustrations"], [href*="/manga"], [href*="/bookmarks"], [href*="/request"], [href*="/following"]) {
+    &:link {
+      color: #1fa3fb !important;
+    }
 
-  /* general artist links */
-  [href*="users/"]:not([href*="/illustrations"], [href*="/manga"], [href*="/bookmarks"]):link {
-    color: #1fa3fb !important;
+    &:visited {
+      color: #ffadff !important;
+    }
   }
 
-  [href*="users/"]:not([href*="/illustrations"], [href*="/manga"], [href*="/bookmarks"]):visited {
-    color: #ffadff !important;
-  }
-
-  /* highlight visited artworks */
-
-  /* general artwork links */
-  [href*="artworks/"]:visited,
-  [href*="novel/show.php"]:visited {
-    color: #ffadff !important;
+  /* highlight visited artwork links */
+  [href*="artworks/"],
+  [href*="novel/show.php"] {
+    &:visited {
+      color: #ffadff !important;
+    }
   }
 }
