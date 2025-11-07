@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.37
+@version      1.0.38
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -22,8 +22,6 @@
   .sc-7b5ed552-1,
   /* recommended users */
   .jrLxAu,
-  /* recommended popup after bookmarking */
-  .hmneeZ,
   /* ad popup after bookmarking */
   .cVFqOO,
   /* favorite guide tooltip */
@@ -74,6 +72,15 @@
       > :nth-child(2 of div),
       > :nth-child(4 of div) {
         display: none !important;
+      }
+    }
+
+    /* recommended popup after bookmarking */
+    figcaption > div:first-of-type[style*="opacity"] {
+      display: none !important;
+
+      & + div {
+        margin-top: 32px !important;
       }
     }
   }
@@ -151,11 +158,6 @@
 
   .cgtmvA > .grid {
     grid-template-columns: 100% 0;
-  }
-
-  /* fix post tags container's margin when recommended popup appears after bookmarking */
-  .bFhjvF {
-    margin-top: 32px !important;
   }
 
   /* extra right margin for comment sticker button */
