@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.41
+@version      1.0.42
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -62,16 +62,18 @@
   }
 
   /* expanded view */
-  main > section:has(figure > [role="presentation"]) {
+  main > section:has(figure) {
     /* controls bar */
-    div[style*="translateY"] section {
+    div[style*="translateY"] {
       /* always show floating controls bar */
       transform: translateY(0%) !important;
 
       /* like & share buttons */
-      > :nth-child(2 of div),
-      > :nth-child(4 of div) {
-        display: none !important;
+      section {
+        > :nth-child(2 of div),
+        > :nth-child(4 of div) {
+          display: none !important;
+        }
       }
     }
 
@@ -173,7 +175,7 @@
   }
 
   /* highlight artist links */
-  [href*="users/"]:not([href*="/illustrations"], [href*="/manga"], [href*="/bookmarks"], [href*="/request"], [href*="/following"]) {
+  [href*="users/"]:not([href*="/artworks"], [href*="/illustrations"], [href*="/manga"], [href*="/bookmarks"], [href*="/request"], [href*="/following"]) {
     &:link {
       color: #1fa3fb !important;
     }
