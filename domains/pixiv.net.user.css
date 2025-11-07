@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.39
+@version      1.0.40
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -177,7 +177,7 @@
   }
 
   /* highlight visited artwork links */
-  [href*="artworks/"],
+  [href*="artworks/"]:not([href*="/bookmarks"]),
   [href*="novel/show.php"] {
     &:visited {
       color: #ffadff !important;
