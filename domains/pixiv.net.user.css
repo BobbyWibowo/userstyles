@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.36
+@version      1.0.37
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -14,56 +14,68 @@
     font-family: Ubuntu, sans-serif !important;
   }
 
-  /* desktop only:
-	 * premium banner
-	 * home's top promotion banner
-   * recommended users
-   * recommended popup after bookmarking
-   * ad popup after bookmarking
-   * favorite guide tooltip
-   * expanded view like button
-   * expanded view share button
-   * expanded view booth popup
-   * expanded view stats
-	 * expanded view booth sidebar
-   * expanded view limited-time effects & link
-   * expanded view contest link
-	 * manga view like button
-	 * manga view bookmark button's stat
-	 * manga view bookmark button's stat (bookmarked)
-	 * home multi view's recommended after bookmarking
-	 * "sort by popularity" premium button
-   * "premium free trial" links
-   * premium campaign links
-	 * home sidebar section: ongoing contests
-   * artist page's booth footer
-   * bottom announcements on right sidebar (typically used for contests)
-   */
+  /* desktop only */
+
+  /* premium banner */
   #__premium_banner,
+  /* home's top promotion banner */
   .sc-7b5ed552-1,
+  /* recommended users */
   .jrLxAu,
+  /* recommended popup after bookmarking */
   .hmneeZ,
+  /* ad popup after bookmarking */
   .cVFqOO,
+  /* favorite guide tooltip */
   .work-interactions .tooltip-container,
-  .kRbGNu,
-  .hItIBR,
+  /* expanded view booth popup */
   .cONxpR,
+  /* expanded view stats */
   .KmAnp,
+  /* expanded view booth sidebar */
   .cmCMBu:nth-child(3),
+  /* expanded view limited-time effects & link */
   div:has(> img[src*="/seasonal-effect-tag/"], > a > img[src*="/seasonal-effect-tag/"]),
+  /* expanded view contest link */
   div:has(> a > img[src*="/contest_icon_"]),
+  /* manga view like button */
   .dLCbDu,
+  /* manga view bookmark button's stat */
   .dVjvjM span,
+  /* manga view bookmark button's stat (bookmarked) */
   .bYzblb span,
+  /* home multi view's recommended after bookmarking */
   [data-ga4-label="user_popular_works"],
+  /* "sort by popularity" premium button */
   .jIlmtS,
+  /* "premium free trial" links */
   a[href*="p=free_campaign"],
+  /* premium campaign links */
   .icUpwV:has(a[href*="p=free_campaign"]),
+  /* home sidebar section: ongoing contests */
   a[href*="/premium/campaign/"],
+  /* TODO: contest? */
   .hSNbaL > .grid > :nth-child(2) .flex-col.gap-8:has(a[href*="/contest/"]),
+  /* artist page's booth footer */
   .fwtRWn,
+  /* bottom announcements on right sidebar (typically used for contests) */
   .pEWQe > .left-0 .sticky.bottom-0:last-child {
     display: none !important;
+  }
+
+  /* expanded view */
+  main > section:has(figure > [role="presentation"]) {
+    /* controls bar */
+    div[style*="translateY"] section {
+      /* always show floating controls bar */
+      transform: translateY(0%) !important;
+
+      /* like & share buttons */
+      > :nth-child(2 of div),
+      > :nth-child(4 of div) {
+        display: none !important;
+      }
+    }
   }
 
   /* hide bookmark stats in classic pages (e.g, bookmark_add.php) */
@@ -105,23 +117,23 @@
     display: none !important;
   }
 
-  /* mobile only:
-	 * recommended users after following
-   * recommended users
-   * expanded view like button
-	 * expanded view share button
-	 * expanded view stats
-   * recommended popup after bookmarking
-   * recommended illustrations popup after bookmarking
-	 * popular search trial
-   */
+  /* mobile only */
+
+  /* recommended users after following */
   #user-recommender,
+  /* recommended users */
   .ddXsIb,
+  /* expanded view like button */
   .work-interactions-like,
+  /* expanded view share button */
   .gtm-work-interactions-share,
+  /* expanded view stats */
   .work-stats > *:not(.times-wrap),
+  /* recommended popup after bookmarking */
   .recommend-slidein-booster,
+  /* recommended illustrations popup after bookmarking */
   .illust-recommender-spa,
+  /* popular search trial */
   .popular-search-trial {
     display: none !important;
   }
@@ -151,57 +163,22 @@
     margin-right: calc(2px + 20px);
   }
 
-  /* highlight artists:
-	 * general artist links
-   * following page
-	 * profile's following page
-	 * expanded view's right sidebar
-	 * expanded view's bottom bar
-	 * recommended artworks
-	 * rankings page
-	 */
-  .QzTPT:link,
-  .itBPLt:link,
-  .hqlQXk:link,
-  .cmcoSo:link,
-  .hzQYGJ:link,
-  .gtm-illust-recommend-user-name:link,
-  .ranking-items.adjust .user-container:link,
-  [data-ga4-label="user_name_link"]:link {
+  /* highlight artists */
+
+  /* general artist links */
+  [href*="users/"]:not([href*="/illustrations"], [href*="/manga"], [href*="/bookmarks"]):link {
     color: #1fa3fb !important;
   }
 
-  .QzTPT:visited,
-  .itBPLt:visited,
-  .hqlQXk:visited,
-  .cmcoSo:visited,
-  .hzQYGJ:visited,
-  .gtm-illust-recommend-user-name:visited,
-  .ranking-items.adjust .user-container:visited,
-  [data-ga4-label="user_name_link"]:visited {
+  [href*="users/"]:not([href*="/illustrations"], [href*="/manga"], [href*="/bookmarks"]):visited {
     color: #ffadff !important;
   }
 
-  /* highlight visited artworks:
-	 * general artwork links
-   * following page
-   * artist/tags page
-   * artist/tags page (novel)
-	 * recommended artworks
-	 * rankings page
-	 */
-  .jpDIhh:visited,
-  .gtm-illust-recommend-title:visited,
-  .hzgkTo:visited,
-  .fkOLKW:visited,
-  .gtm-followlatestpage-thumbnail-link:visited,
-  .ranking-items.adjust .title:visited,
-  [data-ga4-label="title_link"]:visited {
-    color: #ffadff !important;
-  }
+  /* highlight visited artworks */
 
-  /* always show floating illust controls */
-  .dwxegJ {
-    transform: translateY(0%) !important;
+  /* general artwork links */
+  [href*="artworks/"]:visited,
+  [href*="novel/show.php"]:visited {
+    color: #ffadff !important;
   }
 }
