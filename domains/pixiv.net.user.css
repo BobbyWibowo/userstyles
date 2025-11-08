@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.42
+@version      1.0.43
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -94,6 +94,14 @@
     }
   }
 
+  /* manga view controls */
+  div:has(> button, > a[href*="/bookmark_add.php?type=illust"]) {
+    /* hide counters */
+    & > * > span {
+      display: none;
+    }
+  }
+
   /* hide bookmark stats in classic pages (e.g, bookmark_add.php) */
   ._unit.complete-unit .bookmark-count {
     font-size: 0 !important;
@@ -175,7 +183,7 @@
   }
 
   /* highlight artist links */
-  [href*="users/"]:not([href*="/artworks"], [href*="/illustrations"], [href*="/manga"], [href*="/bookmarks"], [href*="/request"], [href*="/following"]) {
+  [href*="users/"]:not([href*="/artworks"], [href*="/bookmarks"], [href*="/following"], [href*="/illustrations"], [href*="/manga"], [href*="/novels"], [href*="/request"]) {
     &:link {
       color: #1fa3fb !important;
     }
