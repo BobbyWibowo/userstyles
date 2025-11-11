@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.43
+@version      1.0.44
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -67,6 +67,11 @@
     div[style*="translateY"] {
       /* always show floating controls bar */
       transform: translateY(0%) !important;
+
+      /* remove floating booth button */
+      div:first-child:has(a[href*="booth.pm"]) {
+        display: none;
+      }
 
       /* like & share buttons */
       section {
@@ -183,7 +188,7 @@
   }
 
   /* highlight artist links */
-  [href*="users/"]:not([href*="/artworks"], [href*="/bookmarks"], [href*="/following"], [href*="/illustrations"], [href*="/manga"], [href*="/novels"], [href*="/request"]) {
+  [href*="users/"]:not([href*="/artworks"], [href*="/bookmarks"], [href*="/collections"], [href*="/following"], [href*="/illustrations"], [href*="/manga"], [href*="/novels"], [href*="/request"]) {
     &:link {
       color: #1fa3fb !important;
     }
