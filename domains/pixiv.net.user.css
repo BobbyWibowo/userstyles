@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         BobbyWibowo-pixiv.net
 @namespace    https://github.com/BobbyWibowo/userstyles
-@version      1.0.44
+@version      1.0.45
 @updateURL    https://github.com/BobbyWibowo/userstyles/raw/master/domains/pixiv.net.user.css
 @license      MIT
 ==/UserStyle== */
@@ -22,6 +22,8 @@
   .sc-7b5ed552-1,
   /* recommended users */
   .jrLxAu,
+  /* recommended users after following on artist page */
+  body > div:not([class]):has(> div[style^="transform: translateY"]),
   /* ad popup after bookmarking */
   .cVFqOO,
   /* favorite guide tooltip */
@@ -103,7 +105,8 @@
   div:has(> button, > a[href*="/bookmark_add.php?type=illust"]) {
     /* hide counters */
     & > * > span {
-      display: none;
+      /* display: none; */
+      /* FIXME: prevent from breaking bookmarks page */
     }
   }
 
